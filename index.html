@@ -29,6 +29,7 @@
 
 <body>
 
+<div class="everything">
   <header>
     <div class="container">
       <img src="assets/logo.svg" class="logo">
@@ -334,7 +335,26 @@
         </div>
     </div>
   </div>
-  <div class="section"></div>
+  <div class="section">
+    <div class="text3">
+      <p class="be2">Welcome to Bright Studios.</p>
+        </div>
+        <div id="blob4"style="right:-2%;margin-top:-10%;position:absolute;">
+        <div data-depth="0.1" ><img src="assets/Vectorinfoblob.svg" style="opacity:0.6;"></img></div>
+          <div data-depth="0.4" >   <p style="font-size: 1.3em;width: 40vw;margin-left:28%;margin-top:35%;">Here we bring you the ultimate website for travel bloggers and enthusiasts to scroll through and find the vistas in the third largest metropolitan city in South Korea.
+
+The Bright is a team of international students, who put together their heads to create this platform for all internationals in Daegu. We took great care to make a friendly experience to all the new comers and travellers in Daegu.
+We hope you would make the best out of this humble venture.
+
+We never thought of making anything more than an informative website, but it is turning out to be larger than its creators’ intentions. A cross cultural platform for discovering new places in Daegu, a discussion forum for travellers and a yet to be revealed serenity in its scopes.
+
+Nothing makes it what it could be without all your honest opinions and suggestions. A team of hardworking and qualified creators are waiting at the Bright to make aeshetically brilliant and the ultimate quality to all of you.
+
+As our motto say “Be at the right places”,  and for that you just need to do is to scroll through the page and click on the destination that pleases and set out for finding the miracles around you.
+
+The more you travel the better you feel and the better you know. We have nothing but knowledge that sets us apart from those around us , but alas brings us all together to achieve greater.
+</p></div></div>
+</div>
   <div class="section">
     <br>
     <div class="card" style="margin-left:10%;">
@@ -344,7 +364,7 @@
     </div>
 
     <div class="card">
-    <img src="" class="image--cover">
+    <img src="profile/libin.jpg" style="object-position: 20% 70%;" class="image--cover">
     <h1>Libin Joseph</h1>
     <p class="title">Technology Leader</p><br>
     </div>
@@ -375,8 +395,9 @@
     <div style="height:30vw; overflow:auto;">
         <img id="placeImg"></img><br><br>
         <div id="info"></div><br><br><br>
+        <p style="font-size:1.4em;">Comment from other travellers:</p>
         <div id="commentsection">
-          <p style="font-size:1.4em;">Comment from other travellers:</p>
+
         </div>
   </div>
 
@@ -409,8 +430,13 @@
   <footer>
     <img src="assets/buildings.svg" class="build">
   </footer>
-
+</div>
+<div class="mobilebox">
+  <h1>Sorry,</h1>
+  <p>We currently dont support mobile version</p>
+</div>
 </body>
+
 <script>
 $(document).ready(function() {
   $('#fullPage').fullpage({
@@ -545,6 +571,7 @@ var i=0;
 
     if(e.target && e.target.nodeName == "A" && i==1) {
       location2=e.target.id;
+
       console.log("Andong last");
       fullpage_api.setAllowScrolling(false);
       const head = dbref.child(location+"/"+e.target.id+"/Name");
@@ -562,7 +589,7 @@ var i=0;
       });
       var bubbles=document.getElementById('bubbles');
       var commentsection=document.getElementById('commentsection');
-      const commentb = dbref.child(location+"/"+e.target.id+"/Comment");
+      const commentb = dbref.child(location+"/"+location2+"/Comment");
       commentb.on('child_added',snap=>{
         const d = document.createElement('div');
         d.innerHTML=
@@ -577,6 +604,8 @@ var i=0;
         var cmntbox = document.getElementById('commenttxt').value;
         var cmnt = dbref.child(location+"/"+location2);
         cmnt.child("Comment").child(namebox).set(cmntbox);
+
+
       });
     }
        if(e.target && e.target.nodeName == "P" && i==0) {
@@ -631,6 +660,9 @@ var scene2 = document.getElementById('blob2');
 var parallaxInstance = new Parallax(scene2);
 var scene3 = document.getElementById('blob3');
 var parallaxInstance = new Parallax(scene3);
+var scene4 = document.getElementById('blob4');
+var parallaxInstance = new Parallax(scene4);
+
 /*
 var button = document.getElementById("btngo");
 button.addEventListener("click", function() {
@@ -643,7 +675,7 @@ $("#in").click("Inside Daegu",disc_p2_out);
 $(".comment").click();
 $("#x").click(function(){
   fullpage_api.setAllowScrolling(true);
-
+  commentsection.innerHTML="";
 });
 
 
