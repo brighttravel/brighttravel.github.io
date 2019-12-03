@@ -273,7 +273,7 @@
 
         </div>
         <div id="blob1">
-          <div data-depth="0.2" class="blb"><img src="assets/blob1/Vector.svg"></div>
+          <div data-depth="0.2" class="blb"><img src="assets/blob1/Vector.svg" ></div>
           <div data-depth="0.3"  class="map"><img src="assets/blob1/Vector_map.svg"></div>
           <div data-depth="0.5" class="flow"><img src="assets/blob1/flower.svg"></div>
           <div data-depth="0.6" class="girl"><img src="assets/blob1/everythinggirl.svg"></div>
@@ -340,8 +340,8 @@
       <p class="be2">Welcome to Bright Studios.</p>
         </div>
         <div id="blob4"style="right:-2%;margin-top:-10%;position:absolute;">
-        <div data-depth="0.1" ><img src="assets/Vectorinfoblob.svg" style="opacity:0.6;"></img></div>
-          <div data-depth="0.4" >   <p style="font-size: 1.3em;width: 40vw;margin-left:28%;margin-top:35%;">Here we bring you the ultimate website for travel bloggers and enthusiasts to scroll through and find the vistas in the third largest metropolitan city in South Korea.
+        <div data-depth="0.1" ><img src="assets/Vectorinfoblob.svg" style="opacity:0.6;width:50vw;height:120vh;"></img></div>
+          <div data-depth="0.4" >   <p style="font-size: 1vw;width: 36vw;margin-left:10vw;margin-top:35%;">Here we bring you the ultimate website for travel bloggers and enthusiasts to scroll through and find the vistas in the third largest metropolitan city in South Korea.
 
 The Bright is a team of international students, who put together their heads to create this platform for all internationals in Daegu. We took great care to make a friendly experience to all the new comers and travellers in Daegu.
 We hope you would make the best out of this humble venture.
@@ -432,8 +432,14 @@ The more you travel the better you feel and the better you know. We have nothing
   </footer>
 </div>
 <div class="mobilebox">
+  <img src="assets/logo.svg" style="width:30%;"></img>
+  <div id="sorry" >
+    <div data-depth="0.4">  <img src="assets/sadface.svg" style="width:30%;height:30%;"></img></div>
+    <div data-depth="0.2">  <img src="assets/sadfacebg.svg" style="width:50%;height:50%;"></img></div>
+
+  </div>
   <h1>Sorry,</h1>
-  <p>Mobile not supported yet, so f$*k off</p>
+  <p>Mobile not supported yet</p>
 </div>
 </body>
 
@@ -662,7 +668,8 @@ var scene3 = document.getElementById('blob3');
 var parallaxInstance = new Parallax(scene3);
 var scene4 = document.getElementById('blob4');
 var parallaxInstance = new Parallax(scene4);
-
+var sorry = document.getElementById('sorry');
+var parallaxInstance = new Parallax(sorry);
 /*
 var button = document.getElementById("btngo");
 button.addEventListener("click", function() {
