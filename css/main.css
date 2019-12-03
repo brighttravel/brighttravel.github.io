@@ -1,0 +1,693 @@
+
+html {
+  color: #3F3D56;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+}
+.homepage{
+}
+.homepage2{
+  /*visibility: hidden;*/
+  opacity:0;
+
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.map{
+  margin-left: 60%;
+  margin-top: 30%;
+}
+.flow{
+  margin-left: 5%;
+  margin-top: 30%;
+
+}
+.blb{
+  margin-left:-5%;
+}
+.girl{
+  margin-left: 20%;
+  margin-top: 15%;
+
+}
+
+.phn{
+  margin-left: 40%;
+  margin-top: 10%;
+}
+.leaf{
+  margin-left: 5%;
+  margin-top: 70%;
+
+}
+.blb2{
+  margin-left:-5%;
+  width: 30vw;
+}
+.guy{
+  margin-left: 20%;
+  margin-top: 35%;
+
+}
+.btn{
+  opacity:0.7;
+  transition:0.2s ease-in;
+
+}
+.btn:hover{
+  opacity: 1;
+  cursor: pointer;
+  transition:0.2s ease-in;
+  }
+.sun{
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.mount{
+  margin-left: 15%;
+  margin-top: 10%;
+
+}
+.blb3{
+  margin-left:15%;
+  margin-top: -10%;
+
+
+}
+.people{
+  margin-left: 30%;
+  margin-top: 40%;
+
+}
+.discover2{
+  opacity: 0;
+  margin-left: -200px;
+}
+.discover3{
+  opacity: 0;
+  margin-left: -200px;
+}
+#outorin{
+  position: absolute;
+  right:20%;
+  margin-top: 5%;
+
+  transition:0.2s ease-in;
+
+}
+#rightside{
+  position: absolute;
+  right:2%;
+  margin-top: 2%;
+  z-index: 10;
+  transition:0.2s ease-in;
+  float:right;
+  width: 50%;
+
+}
+#placeImg{
+  width:40vw;
+}
+#info{
+  width: 40vw;
+  font-size: 1em;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6C63FF;
+}
+
+/*about page*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  float:left;
+  margin-right:5%;
+  padding:3%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+  line-height:0px;
+}
+
+
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+
+  object-fit: cover;
+  object-position: center right;
+}
+
+
+
+/*modal*/
+.modal-window {
+	 position: fixed;
+
+	 background-color: rgba(138,43,226, 0.25);
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 z-index: 999;
+	 visibility: hidden;
+	 opacity: 0;
+	 pointer-events: none;
+	 transition: all 0.5s;
+}
+ .modal-window:target {
+	 visibility: visible;
+	 opacity: 1;
+	 pointer-events: auto;
+}
+ .modal-window > div {
+	 /*width: 400px;*/
+   overflow: auto;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 padding: 2em;
+	 background: #fff;
+}
+ .modal-window header {
+	 font-weight: bold;
+}
+ .modal-window h1 {
+	 font-size: 150%;
+	 margin: 0 0 15px;
+}
+ .modal-close {
+	 color: #aaa;
+	 line-height: 50px;
+	 font-size: 80%;
+	 position: absolute;
+	 right: 0;
+	 text-align: center;
+	 top: 0;
+	 width: 70px;
+	 text-decoration: none;
+}
+ .modal-close:hover {
+	 color: black;
+}
+
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  margin-top:2px;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
+}
+
+
+.footer{
+  position: absolute;
+  z-index: -1;
+}
+.daegubtn{
+  margin: 2%;
+  background-color: #fff;
+  padding: 5%;
+  text-align: center;
+  color: #3F3D56;
+  float: left;
+  cursor:pointer;
+  font-size: 1.5vw;
+  border-radius:30px;
+  border:2px solid #6C63FF;
+  transition:0.2s ease-in;
+  text-decoration: none;
+
+}
+.daegubtn:hover {
+  border: 2px solid #6C63FF;
+ background-color: #6C63FF;
+ color: white;
+
+ transition:0.2s ease-in;
+}
+li {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color:#BEB9B9;
+  transition: 0.2s ease-in;
+
+}
+ li:hover {
+  color: #3F3D56;
+  transition:0.2s ease-in;
+}
+
+.active{
+  color: #3F3D56;
+
+}
+
+nav{
+  float:right;
+
+}
+nav ul{
+  margin:0;
+  padding-left : 0%;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left:70px;
+  padding-top:13%;
+  font-size: 1.7em;
+
+}
+.text1{
+  width:80%;
+  height:70%;
+  margin-top:6%;
+  left:130px;
+  position:absolute;
+}
+.be{
+  font-size: 4.5em;
+  font-weight: 700;
+  line-height: 4px;
+}
+.we{
+  font-size: 2em;
+  line-height: 4px;
+
+
+}
+.text3{
+  margin-top: 5%;
+  left:130px;
+  position: absolute;
+  width:40%;
+
+
+}
+.text2{
+  width:80%;
+  height:70%;
+  margin-top: 6%;
+  left:130px;
+  position: absolute;
+}
+.be2{
+  line-height: 80px;
+  font-size: 4.5em;
+  font-weight: 700;
+  margin-block-start:0; margin-block-end:0; margin-inline-start:0; margin-inline-end:0;
+
+}
+.we2{
+  font-size: 2em;
+  margin-block-start:0; margin-block-end:0; margin-inline-start:0; margin-inline-end:0;
+
+
+}
+
+
+#blob2{
+  float:right;
+  right: 6%;
+  position: absolute;
+
+}
+#blob1{
+  float:right;
+  margin-right: 6%;
+}
+#blob3{
+  float:right;
+  margin-right: 6%;
+
+}
+.build{
+  position: fixed;
+  bottom: -15%;
+}
+.logo{
+  float: left;
+  padding:4% 0% 4% 0%;
+  width:10vw;
+}
+header{
+  background-image: url("../assets/navbar.svg");
+  margin-top:-2%;
+  z-index: 6;
+  background-size:cover;
+  position: relative;
+                /* <------ */
+}
+
+header::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+/*css leaves*/
+svg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  opacity:0.9;
+  pointer-events: none;
+
+}
+
+@keyframes motion {
+  from {}
+  to {
+    -moz-transform: rotate(20deg) translateX(5000px) skewX(10deg);
+    -webkit-transform: rotate(20deg) translateX(5000px) skewX(10deg);
+    -o-transform: rotate(20deg) translateX(5000px) skewX(10deg);
+    -ms-transform: rotate(20deg) translateX(5000px) skewX(10deg);
+    transform: rotate(20deg) translateX(5000px) skewX(10deg);
+  }
+}
+
+@keyframes motion2 {
+  from {}
+  to {
+    -moz-transform: rotate(-30deg) translateX(5000px);
+    -webkit-transform: rotate(-30deg) translateX(5000px);
+    -o-transform: rotate(-30deg) translateX(5000px);
+    -ms-transform: rotate(-30deg) translateX(5000px);
+    transform: rotate(-30deg) translateX(5000px);
+  }
+}
+
+@keyframes motion3 {
+  from {}
+  to {
+    -moz-transform: rotate(50deg) translateX(5000px);
+    -webkit-transform: rotate(50deg) translateX(5000px);
+    -o-transform: rotate(50deg) translateX(5000px);
+    -ms-transform: rotate(50deg) translateX(5000px);
+    transform: rotate(50deg) translateX(5000px);
+  }
+}
+
+#l4,
+#l12 {
+  animation: 16s motion2 infinite;
+}
+
+#l7,
+#l9 {
+  animation: 14s motion2 infinite;
+}
+
+#l2,
+#l15 {
+  animation: 18s motion2 infinite;
+}
+
+#l7,
+#l12 {
+  animation: 14s motion2 infinite;
+}
+
+#l5,
+#l11 {
+  animation: 19s motion infinite;
+}
+
+#l14 {
+  animation: 17s motion infinite;
+}
+
+#l10 {
+  animation: 18s motion infinite;
+}
+
+#l3 {
+  animation: 16s motion3 infinite;
+}
+
+#l13 {
+  animation: 20s motion3 infinite;
+}
+
+#l8 {
+  animation: 14s motion3 infinite;
+}
